@@ -87,4 +87,3 @@ sfRenderWindow *my_window(t_var *var);
 void my_runner (void);
 
 #endif
-
