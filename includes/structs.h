@@ -16,7 +16,7 @@
     #include <stdlib.h>
     #include <stdio.h>
 
-typedef struct s_var {
+    typedef struct s_var {
     sfVideoMode video_mode;
     sfRenderWindow *window;
     sfSoundBuffer *buffer;
@@ -73,6 +73,6 @@ typedef struct s_var {
     int score;
     int dead;
     int jump;
-}t_var;
+    }t_var;
 
 #endif

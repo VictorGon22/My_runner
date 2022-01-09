@@ -43,12 +43,8 @@ void my_runner_manage(t_var *var)
             print_character(var);
         manage_rocket(var);
     }
-    else {
-        while(analayse_events(&var, 0) == 0)
-        {
-            print_page_gameover(&var);
-        }
-    }
+    else
+        print_page_gameover(&var);
 }
 
 sfRenderWindow *my_window(t_var *var)
@@ -66,7 +62,7 @@ sfRenderWindow *my_window(t_var *var)
             my_runner_manage(var);
         }
     }
-    destroy_all(var);
+    sfMusic_destroy(var->music_game);
 }
 
 void my_runner (void)

@@ -61,25 +61,3 @@ void make_jump_sound (t_var *var)
     }
 
 }
-
-void destroy_all(t_var *var)
-{
-    sfMusic_destroy(var->music_game);
-    sfSound_destroy(var->sound_dead);
-    sfSound_destroy(var->sound_jump);
-    sfSound_destroy(var->sound_select);
-    sfSound_destroy(var->sound_touched);
-    sfSprite_destroy(var->background);
-    sfSprite_destroy(var->background2);
-    sfSprite_destroy(var->background3);
-    sfSprite_destroy(var->textlevels);
-    sfSprite_destroy(var->button1);
-    sfSprite_destroy(var->button2);
-    sfSprite_destroy(var->button3);
-    sfSprite_destroy(var->character);
-    sfSprite_destroy(var->gameover);
-    sfSprite_destroy(var->lives);
-    sfSprite_destroy(var->rocket);
-    sfSprite_destroy(var->char_bend);
-
-}

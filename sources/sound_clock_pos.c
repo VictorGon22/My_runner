@@ -33,8 +33,6 @@ void create_clocks(t_var *var)
 void create_msg (t_var *var)
 {
     var->font = sfFont_createFromFile("./fonts/arial.ttf");
-    if (!var->font)
-        exit (0);
     var->text = sfText_create();
     var->textmsg = sfText_create();
     sfText_setFont(var->text, var->font);
@@ -52,7 +50,7 @@ void create_positions(t_var *var)
 {
     var -> pos_errase = (sfVector2f) {0, 0};
     var -> select_character = (sfIntRect) {0, 0, 70, 115};
-    var -> pos_character = (sfVector2f) {300, 566};
+    var -> pos_character = (sfVector2f) {300, 600};
     var -> pos_textmsg = (sfVector2f) {900, 20};
     var -> pos_text = (sfVector2f) {1100, 20};
     var -> velocity_character_up = (sfVector2f) {0, -8};

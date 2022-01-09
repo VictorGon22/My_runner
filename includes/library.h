@@ -6,18 +6,18 @@
 */
 
 #ifndef LIBRAY_H_
-#define LIBRAY_H_
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <stddef.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include <sys/stat.h>
-#include <ctype.h>
-#include "./structs.h"
+    #define LIBRAY_H_
+    #include <string.h>
+    #include <stdio.h>
+    #include <unistd.h>
+    #include <sys/types.h>
+    #include <sys/stat.h>
+    #include <stddef.h>
+    #include <fcntl.h>
+    #include <stdlib.h>
+    #include <sys/stat.h>
+    #include <ctype.h>
+    #include "./structs.h"
 
 //Create Sprites 1
 sfSprite *create_textlevel(void);
@@ -78,7 +78,6 @@ int nb_len(int nb);
 void ini_var_struct(t_var *var);
 void ini_var_struct2(t_var *var);
 int analayse_events(t_var **var, int page);
-void destroy_all(t_var *var);
 void make_jump_sound (t_var *var);
 
 //My_Window Functions
